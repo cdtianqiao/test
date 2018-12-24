@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\base_app.cpp" />
+    <ClCompile Include="data\data.cpp" />
+    <ClCompile Include="filecache\file_cache_manager.cpp" />
+    <ClCompile Include="filedb\filechunk.cpp" />
+    <ClCompile Include="filedb\filechunkwrap.cpp" />
+    <ClCompile Include="filedb\filedbheader.cpp" />
+    <ClCompile Include="filedb\filedbmanager.cpp" />
+    <ClCompile Include="filedb\filedes.cpp" />
+    <ClCompile Include="filedb\filepage.cpp" />
+    <ClCompile Include="filedb\filereaddb.cpp" />
+    <ClCompile Include="filedb\filewritedb.cpp" />
+    <ClCompile Include="file\bytebuffer.cpp" />
+    <ClCompile Include="file\file.cpp" />
+    <ClCompile Include="file\file_util.cpp" />
+    <ClCompile Include="file\gfile_map.cpp" />
+    <ClCompile Include="file\gmap_object.cpp" />
+    <ClCompile Include="file\gmap_region.cpp" />
+    <ClCompile Include="io\sbuff.cpp" />
+    <ClCompile Include="io\sifmap_stream.cpp" />
+    <ClCompile Include="io\sifmem_stream.cpp" />
+    <ClCompile Include="io\sifstream.cpp" />
+    <ClCompile Include="io\simem_stream.cpp" />
+    <ClCompile Include="io\sistream.cpp" />
+    <ClCompile Include="io\smem_stream.cpp" />
+    <ClCompile Include="io\sofstream.cpp" />
+    <ClCompile Include="io\somem_stream.cpp" />
+    <ClCompile Include="io\sostream.cpp" />
+    <ClCompile Include="io\sstream.cpp" />
+    <ClCompile Include="keyword\keyword_filter.cpp" />
+    <ClCompile Include="log\log.cpp" />
+    <ClCompile Include="math\math_ex.cpp" />
+    <ClCompile Include="md5\md5.c" />
+    <ClCompile Include="memory_manager\memory_manager.cpp" />
+    <ClCompile Include="net\client.cpp" />
+    <ClCompile Include="net\net_manager.cpp" />
+    <ClCompile Include="net\npackage.cpp" />
+    <ClCompile Include="net\npackage_ex.cpp" />
+    <ClCompile Include="net\npackage_ex2.cpp" />
+    <ClCompile Include="net\sample_factory.cpp" />
+    <ClCompile Include="net\sample_handle.cpp" />
+    <ClCompile Include="net\server.cpp" />
+    <ClCompile Include="net\service_pool.cpp" />
+    <ClCompile Include="object\object.cpp" />
+    <ClCompile Include="process\process_manager.cpp" />
+    <ClCompile Include="script\script_engine.cpp" />
+    <ClCompile Include="script\script_engine_manager.cpp" />
+    <ClCompile Include="script\script_manager.cpp" />
+    <ClCompile Include="sio\sdata_map.cpp" />
+    <ClCompile Include="sio\sdata_map_reader.cpp" />
+    <ClCompile Include="sio\sdata_map_writer.cpp" />
+    <ClCompile Include="sio\sio_bytearray.cpp" />
+    <ClCompile Include="sio\sio_data.cpp" />
+    <ClCompile Include="sio\sio_data_buf.cpp" />
+    <ClCompile Include="sio\sio_list.cpp" />
+    <ClCompile Include="sio\sio_list_reader.cpp" />
+    <ClCompile Include="sio\sio_list_writer.cpp" />
+    <ClCompile Include="sio\sio_string.cpp" />
+    <ClCompile Include="ssecurity\ssecurity.cpp" />
+    <ClCompile Include="task\task.cpp" />
+    <ClCompile Include="task\taskmanager.cpp" />
+    <ClCompile Include="task\task_manager.cpp" />
+    <ClCompile Include="task\task_manager_ex.cpp" />
+    <ClCompile Include="task\task_manager_imp.cpp" />
+    <ClCompile Include="task\task_thread.cpp" />
+    <ClCompile Include="timer\timer.cpp" />
+    <ClCompile Include="timer\timer_manager_ex.cpp" />
+    <ClCompile Include="timer\time_ex.cpp" />
+    <ClCompile Include="util\base64.cpp" />
+    <ClCompile Include="util\call.cpp" />
+    <ClCompile Include="util\callex.cpp" />
+    <ClCompile Include="util\config.cpp" />
+    <ClCompile Include="util\config_group.cpp" />
+    <ClCompile Include="util\sig.cpp" />
+    <ClCompile Include="util\slist.cpp" />
+    <ClCompile Include="util\stringex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\base_app.h" />
+    <ClInclude Include="clib.h" />
+    <ClInclude Include="data\data.h" />
+    <ClInclude Include="filecache\file_cache_common.h" />
+    <ClInclude Include="filecache\file_cache_manager.h" />
+    <ClInclude Include="filedb\filechunk.h" />
+    <ClInclude Include="filedb\filechunkwrap.h" />
+    <ClInclude Include="filedb\filedbheader.h" />
+    <ClInclude Include="filedb\filedbmanager.h" />
+    <ClInclude Include="filedb\filedb_common.h" />
+    <ClInclude Include="filedb\filedes.h" />
+    <ClInclude Include="filedb\filepage.h" />
+    <ClInclude Include="filedb\filereaddb.h" />
+    <ClInclude Include="filedb\filewritedb.h" />
+    <ClInclude Include="filedb\file_db_manger.h" />
+    <ClInclude Include="file\bytebuffer.h" />
+    <ClInclude Include="file\file.h" />
+    <ClInclude Include="file\file_util.h" />
+    <ClInclude Include="file\file_header.h" />
+    <ClInclude Include="file\gfile_map.h" />
+    <ClInclude Include="file\gmap_object.h" />
+    <ClInclude Include="file\gmap_region.h" />
+    <ClInclude Include="io\sbuff.h" />
+    <ClInclude Include="io\sifmap_stream.h" />
+    <ClInclude Include="io\sifmem_stream.h" />
+    <ClInclude Include="io\sifstream.h" />
+    <ClInclude Include="io\simem_stream.h" />
+    <ClInclude Include="io\sistream.h" />
+    <ClInclude Include="io\smem_stream.h" />
+    <ClInclude Include="io\sofstream.h" />
+    <ClInclude Include="io\somem_stream.h" />
+    <ClInclude Include="io\sostream.h" />
+    <ClInclude Include="io\sstream.h" />
+    <ClInclude Include="keyword\keyword_filter.h" />
+    <ClInclude Include="log\log.h" />
+    <ClInclude Include="math\math_ex.h" />
+    <ClInclude Include="md5\md5.h" />
+    <ClInclude Include="memory_manager\memory_allocator.h" />
+    <ClInclude Include="memory_manager\memory_manager.h" />
+    <ClInclude Include="net\client.h" />
+    <ClInclude Include="net\ifactory.h" />
+    <ClInclude Include="net\napckage_header_ex.h" />
+    <ClInclude Include="net\nevent.h" />
+    <ClInclude Include="net\nmodule.h" />
+    <ClInclude Include="net\npackage.h" />
+    <ClInclude Include="net\net_manager.h" />
+    <ClInclude Include="net\nIterface.h" />
+    <ClInclude Include="net\npackage_ex.h" />
+    <ClInclude Include="net\npackage_ex2.h" />
+    <ClInclude Include="net\npackage_header.h" />
+    <ClInclude Include="net\npackage_header_ex2.h" />
+    <ClInclude Include="net\sample_factory.h" />
+    <ClInclude Include="net\sample_handle.h" />
+    <ClInclude Include="net\section.h" />
+    <ClInclude Include="net\server.h" />
+    <ClInclude Include="net\service_pool.h" />
+    <ClInclude Include="net\session.h" />
+    <ClInclude Include="object\object.h" />
+    <ClInclude Include="process\process.h" />
+    <ClInclude Include="process\process_manger.h" />
+    <ClInclude Include="script\script.h" />
+    <ClInclude Include="script\script_common.h" />
+    <ClInclude Include="script\script_engine.h" />
+    <ClInclude Include="script\script_engine_manager.h" />
+    <ClInclude Include="script\script_manager.h" />
+    <ClInclude Include="script_push.h" />
+    <ClInclude Include="sio\sdata_map.h" />
+    <ClInclude Include="sio\sdata_map_reader.h" />
+    <ClInclude Include="sio\sdata_map_writer.h" />
+    <ClInclude Include="sio\sio.h" />
+    <ClInclude Include="sio\sio_bytearray.h" />
+    <ClInclude Include="sio\sio_data.h" />
+    <ClInclude Include="sio\sio_data_buf.h" />
+    <ClInclude Include="sio\sio_list.h" />
+    <ClInclude Include="sio\sio_list_reader.h" />
+    <ClInclude Include="sio\sio_list_writer.h" />
+    <ClInclude Include="sio\sio_string.h" />
+    <ClInclude Include="ssecurity\ssecurity.h" />
+    <ClInclude Include="system\system.h" />
+    <ClInclude Include="task\task.h" />
+    <ClInclude Include="task\taskcommon.h" />
+    <ClInclude Include="task\taskmanager.h" />
+    <ClInclude Include="task\task_manager.h" />
+    <ClInclude Include="task\task_manager_ex.h" />
+    <ClInclude Include="timer\timer.h" />
+    <ClInclude Include="timer\timer_common.h" />
+    <ClInclude Include="timer\timer_manager_ex.h" />
+    <ClInclude Include="timer\time_ex.h" />
+    <ClInclude Include="util\base64.h" />
+    <ClInclude Include="util\call.h" />
+    <ClInclude Include="util\callex.h" />
+    <ClInclude Include="util\config.h" />
+    <ClInclude Include="util\config_group.h" />
+    <ClInclude Include="util\sig.h" />
+    <ClInclude Include="util\slist.h" />
+    <ClInclude Include="util\stringex.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{943D8DD5-61E3-4631-A089-F389870DC4F9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>clib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectName)/Debug/</OutDir>
+    <IntDir>$(ProjectName)/Debug/</IntDir>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../win32_obj/$(ProjectName)/Release/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>../../../win32_obj/$(ProjectName)/Release/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(cplus_include);$(cplus_include)/lua;$(cplus_include)/zlib;$(cplus_include)/lzma</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(ProjectName)_d.lib</OutputFile>
+      <ForceSymbolReferences>__tcmalloc</ForceSymbolReferences>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CPLUS_LIB)/lua-5.1.5/src;$(BOOST_PATH);$(CPLUS_LIB)/Lzma/;$(CPLUS_LIB)/zlib-1.2.8;$(cplus_include);$(cplus_include)/lua;$(cplus_include)/zlib;$(cplus_include)/lzma</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TEMP_OUT_PATH_003)/$(ProjectName)_d.lib</OutputFile>
+      <ForceSymbolReferences>__tcmalloc</ForceSymbolReferences>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CPLUS_LIB)/lua/include;$(BOOST_PATH);$(CPLUS_LIB)/lua</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(WIN32_LIB)/$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CPLUS_LIB)/lua/include;$(BOOST_PATH);$(CPLUS_LIB)/lua</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(WIN32_LIB)/$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
